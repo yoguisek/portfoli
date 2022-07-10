@@ -1,9 +1,37 @@
 
 *{margin: 0%;}
-body{background-color:rgb(69, 8, 60);}
+body{background-color:rgb(69, 8, 60);
+}
 .booki_bg p{font-family: 'Akshar';}
 
-h1{display:flex;
+h1  {
+  animation-duration: 2s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none; 
+
+}
+
+@keyframes clignoter {
+ 0%{filter: brightness(0.3);}
+ 10%{filter: brightness(1);}
+ 15%{filter: brightness(0.7);}
+ 20%{filter: brightness(1);filter: saturate(1);
+text-shadow: #ccc 1px 1px; }
+}
+
+
+.fa:hover{
+box-shadow: #ccc;
+width: 125%;
+
+}
+
+
+
+
+:nth-child(bg){margin-top: 30px;}
+h1{position:relative;
     font-size: 100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 white-space: nowrap;}
